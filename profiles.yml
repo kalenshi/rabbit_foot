@@ -1,0 +1,23 @@
+fluffle:
+  outputs:
+    dev:
+      dataset: purpose
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: fluffle1
+      threads: 4
+      type: bigquery
+    production:
+      dataset: dbt-kalenshi
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: fluffle1
+      threads: 4
+      type: bigquery
+  target: dev
